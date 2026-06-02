@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagar Kumar | QA Engineer - AI | Online Instructor</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/SK-logo.png">
+    <link rel="shortcut icon" href="Images/SK-logo.png">
+
+</head>
+<div id="lightbox">
+    <span id="close-lightbox">&times;</span>
+    <img id="lightbox-img">
+</div>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 py-3 px-6 md:px-12 flex justify-between items-center">
+        <div class="nav-logo text-lg font-bold tracking-wider">&lt;SAGAR.QA/&gt;</div>
+        <div id="desktop-nav" class="hidden md:flex space-x-7">
+            <a href="#about"        class="nav-link">About</a>
+            <a href="#skills"       class="nav-link">Skills</a>
+            <a href="#experience"   class="nav-link">Experience</a>
+            <a href="#achievements" class="nav-link">Achievements</a>
+            <a href="#results"      class="nav-link">Students</a>
+            <a href="#contact"      class="nav-link">Contact</a>
+        </div>
+        <div class="flex items-center gap-3">
+            <a href="#contact" class="nav-btn">Let’s Collaborate</a>
+            <button class="hamburger flex-col gap-1.5 p-1" id="ham-btn" aria-label="Menu">
+                <span class="block w-5 h-0.5 bg-slate-400"></span>
+                <span class="block w-5 h-0.5 bg-slate-400"></span>
+                <span class="block w-5 h-0.5 bg-slate-400"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full z-40 flex-col items-center justify-center gap-8 text-lg font-semibold">
+        <button id="close-menu" class="absolute top-5 right-6 text-2xl" style="color:var(--text-2);">&times;</button>
+        <a href="#about"        style="color:var(--text-1);" onclick="closeMobileMenu()">About</a>
+        <a href="#skills"       style="color:var(--text-1);" onclick="closeMobileMenu()">Skills</a>
+        <a href="#experience"   style="color:var(--text-1);" onclick="closeMobileMenu()">Experience</a>
+        <a href="#achievements" style="color:var(--text-1);" onclick="closeMobileMenu()">Achievements</a>
+        <a href="#results"      style="color:var(--text-1);" onclick="closeMobileMenu()">Students</a>
+        <a href="#contact"      style="color:var(--text-1);" onclick="closeMobileMenu()">Contact</a>
+    </div>
+
+    <!-- ══════════════════ HERO ══════════════════ -->
+    <section class="hero-section">
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+        <div style="position:relative; z-index:1; width:100%; max-width:52rem; margin:0 auto;">
+
+            <!-- Avatar -->
+
+            <p data-aos="fade-down" data-aos-duration="800" class="hero-eyebrow">
+                System Integrity · AI Validation · Technical Instruction
+            </p>
+
+            <h1 data-aos="zoom-in" data-aos-duration="950" class="hero-name">Sagar Kumar</h1>
+
+            <!-- Social pills -->
+            <div data-aos="fade-up" data-aos-duration="1050" class="hero-socials">
+                <a href="https://linkedin.com/in/sagar-kumar03" target="_blank" class="social-pill">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                </a>
+                <a href="https://github.com/Sagarkumar3" target="_blank" class="social-pill">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="Sagar_Kumar_QA_Resume.pdf" class="social-pill" id="resume-btn">
+                    <i class="fas fa-file-arrow-down"></i> Resume
+                </a>
+            </div>
+
+            <h2 data-aos="fade-up" data-aos-duration="1100" class="hero-role">
+                QA Engineer — AI<span class="sep">|</span>Online Instructor
+            </h2>
+
+            <!-- Animated rotating tagline -->
+            <div data-aos="fade-up" data-aos-duration="1200" class="rotating-line">
+                <ul>
+                    <li>Validating LLM outputs &amp; AI system integrity from day one</li>
+                    <li>200+ test cases · 95%+ coverage · zero compromise on quality</li>
+                    <li>Real-time multilingual translation testing across 4+ language pairs</li>
+                    <li>Improving system reliability through structured validation and review</li>
+                    <li>Teaching O &amp; A-Level students to build strong foundations in tech</li>
+                    <li>Validating LLM outputs &amp; AI system integrity from day one</li>
+                    <li>200+ test cases · 95%+ coverage · zero compromise on quality</li>
+                </ul>
+            </div>
+
+            <p data-aos="fade-up" data-aos-duration="1300" class="hero-desc">
+                Specializing in software testing and QA for modern systems, including AI-driven applications, LLM outputs, and real-time multilingual translation frameworks, while also mentoring the next generation of technical learners.
+            </p>
+
+            <div data-aos="fade-up" data-aos-duration="1450" class="hero-btns">
+                <a href="#contact" class="btn-primary">Get In Touch</a>
+                <a href="#experience" class="btn-ghost">View Experience</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ ABOUT ══════════════════ -->
+    <section id="about" class="py-24 px-6 md:px-12 section-divider">
+        <div class="max-w-6xl mx-auto">
+            <h2 data-aos="fade-right" class="text-3xl font-bold mb-12 flex items-center gap-3">
+                <span class="section-num"></span>About Me
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
+
+                <!-- Text col -->
+                <div data-aos="fade-right" class="lg:col-span-2 space-y-5">
+                    <div class="flex flex-wrap gap-2 mb-1">
+                        <span class="about-badge"><i class="fas fa-shield-halved"></i> AI QA Engineer</span>
+                        <span class="about-badge"><i class="fas fa-microchip"></i> LLM Validation</span>
+                        <span class="about-badge"><i class="fas fa-language"></i> RTT Testing</span>
+                        <span class="about-badge"><i class="fas fa-chalkboard-teacher"></i> Online Instructor</span>
+                    </div>
+                    <p class="text-lg font-semibold" style="color:var(--text-1);">
+                        Hi — I'm a <span style="color:var(--cyan);">QA Engineer</span> focused on ensuring quality and reliability across modern software systems, working at the intersection of quality engineering and emerging technologies.
+                    </p>
+                    <p class="text-sm leading-relaxed" style="color:var(--text-2);">
+                        My day-to-day work involves testing LLM-based chatbot pipelines and real-time multilingual translation systems, identifying issues beyond standard validation checks. I approach quality as an ongoing discipline rather than a final checkpoint, covering everything from system behavior to backend data integrity.
+                    </p>
+                    <p class="text-sm leading-relaxed" style="color:var(--text-2);">
+                        Alongside my QA career, I've been running live programming instruction for O &amp; A-Level students since 2022 — turning abstract CS concepts into confident, hands-on coders.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5 pt-1">
+                        <div class="qa-check"><span class="chk">✓</span><span>Functional, regression, and exploratory testing across AI-driven applications</span></div>
+                        <div class="qa-check"><span class="chk">✓</span><span>LLM output validation — prompt adherence, context handling, and edge-case analysis</span></div>
+                        <div class="qa-check"><span class="chk">✓</span><span>Real-time translation (RTT) system testing across 4+ language pairs.</span></div>
+                        <div class="qa-check"><span class="chk">✓</span><span>API validation using Postman; &amp; performance checks under varying traffic conditions</span></div>
+                        <div class="qa-check"><span class="chk">✓</span><span>Database-layer verification — schema logic, transactional integrity, SQL/Postgres.</span></div>
+                        <div class="qa-check"><span class="chk">✓</span><span>Teaching programming fundamentals to O/A-Level students</span></div>
+                    </div>
+                    <p class="text-sm pt-1" style="color:var(--text-3);">
+                        Looking for QA expertise for your AI product or a tutor for your students?
+                        <a href="#contact" style="color:var(--cyan); font-weight:600;">Let's connect →</a>
+                    </p>
+                </div>
+
+                <!-- Photo + metrics card -->
+                <div data-aos="fade-left" class="photo-card">
+                    <div class="photo-frame">
+                        <!-- Replace src with your actual photo e.g. src="assets/sagar.jpg" -->
+                        <img src="Images/Sagar-profile.jpg" alt="Sagar Kumar"
+                             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder" style="display:none;">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Add photo:<br>assets/sagar.jpg</span>
+                        </div>
+                    </div>
+                    <!-- <div class="metrics-grid">
+                        <div class="metric-row"><i class="fas fa-bullseye"></i><span>95%+ Test Case Coverage</span></div>
+                        <div class="metric-row"><i class="fas fa-language"></i><span>98% Multilingual AI Accuracy</span></div>
+                        <div class="metric-row"><i class="fas fa-list-check"></i><span>200+ Test Cases Designed</span></div>
+                        <div class="metric-row"><i class="fas fa-graduation-cap"></i><span>BS Computer Science</span></div>
+                        <div class="metric-row"><i class="fas fa-star"></i><span>Dean's List — Spring 2024</span></div>
+                        <div class="metric-row"><i class="fas fa-map-marker-alt"></i><span>Karachi, Pakistan</span></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ SKILLS ══════════════════ -->
+    <section id="skills" class="py-24 px-6 md:px-12 section-divider">
+        <div class="max-w-6xl mx-auto">
+            <h2 data-aos="fade-right" class="text-3xl font-bold mb-14 flex items-center gap-3">
+                <span class="section-num"></span>Technical Skills &amp; Tools
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div data-aos="fade-up" class="skill-card">
+                    <div style="color:var(--cyan); font-size:1.5rem; margin-bottom:0.75rem;"><i class="fas fa-shield-halved"></i></div>
+                    <h3 class="text-base font-bold mb-1" style="color:var(--text-1);">Testing Core</h3>
+                    <p style="font-family:'DM Mono',monospace; font-size:0.63rem; color:var(--text-3); margin-bottom:1rem;">Methodologies &amp; execution types</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="skill-tag">Manual / Functional</span><span class="skill-tag">Regression Suite</span>
+                        <span class="skill-tag">API Validation</span><span class="skill-tag">Smoke / Sanity</span>
+                        <span class="skill-tag">Usability Matrix</span><span class="skill-tag">SDLC / STLC / Agile</span>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100" class="skill-card">
+                    <div style="color:var(--indigo); font-size:1.5rem; margin-bottom:0.75rem;"><i class="fas fa-microchip"></i></div>
+                    <h3 class="text-base font-bold mb-1" style="color:var(--text-1);">AI &amp; Advanced QA</h3>
+                    <p style="font-family:'DM Mono',monospace; font-size:0.63rem; color:var(--text-3); margin-bottom:1rem;">Next-gen capabilities</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="skill-tag">LLM Chatbots</span><span class="skill-tag">RTT Translation</span>
+                        <span class="skill-tag">Speech-To-Text</span><span class="skill-tag">Edge-Case Mining</span>
+                        <span class="skill-tag">Root Cause Diagnostics</span>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200" class="skill-card">
+                    <div style="color:#38bdf8; font-size:1.5rem; margin-bottom:0.75rem;"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="text-base font-bold mb-1" style="color:var(--text-1);">Automation Engine</h3>
+                    <p style="font-family:'DM Mono',monospace; font-size:0.63rem; color:var(--text-3); margin-bottom:1rem;">Framework &amp; CI paths</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="skill-tag">Selenium WebDriver</span><span class="skill-tag">Playwright</span>
+                        <span class="skill-tag">GitHub Actions CI</span><span class="skill-tag">Git Version Control</span>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300" class="skill-card">
+                    <div style="color:#34d399; font-size:1.5rem; margin-bottom:0.75rem;"><i class="fas fa-screwdriver-wrench"></i></div>
+                    <h3 class="text-base font-bold mb-1" style="color:var(--text-1);">Tools &amp; Stack</h3>
+                    <p style="font-family:'DM Mono',monospace; font-size:0.63rem; color:var(--text-3); margin-bottom:1rem;">Daily operational stack</p>
+                    <div class="flex flex-wrap gap-1.5">
+                        <span class="skill-tag">Postman API</span><span class="skill-tag">JIRA</span>
+                        <span class="skill-tag">Apache JMeter</span><span class="skill-tag">TestRail</span>
+                        <span class="skill-tag">SQL / MySQL / Postgres</span><span class="skill-tag">Python / Java / C++</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ EXPERIENCE ══════════════════ -->
+    <section id="experience" class="py-24 px-6 md:px-12 section-divider">
+        <div class="max-w-5xl mx-auto">
+            <h2 data-aos="fade-right" class="text-3xl font-bold mb-14 flex items-center gap-3">
+                <span class="section-num"></span>Experience
+            </h2>
+            <div class="relative pl-8 md:pl-12">
+                <div class="timeline-line" style="position:absolute; left:0; top:0.5rem; bottom:0; width:2px;"></div>
+
+                <!-- Role 1 -->
+                <div data-aos="fade-up" class="mb-12 relative">
+                    <div style="position:absolute; left:-31px; top:4px; width:14px; height:14px; border-radius:50%; border:2px solid var(--cyan); background:var(--bg-base); z-index:10;"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
+                        <div>
+                            <h3 class="text-lg font-bold" style="color:var(--text-1);">Software Engineer — QA</h3>
+                            <p style="color:var(--cyan); font-size:0.8rem; font-weight:600;">Ibex. Pakistan</p>
+                        </div>
+                        <span class="exp-date">Jun 2025 — Present</span>
+                    </div>
+                    <div class="exp-card">
+                        <ul class="exp-list">
+                            <li>Designed and executed 200+ test cases across web applications and high-traffic AI systems, maintaining 95%+ test coverage</li>
+<li>Validated LLM outputs, data pipeline flows, and real-time translation (RTT) layers, achieving 98% multilingual accuracy tracking</li>
+<li>Performed API testing using Postman to ensure functional correctness and system reliability</li>
+<li>Logged, categorized, and tracked defects using JIRA and TestRail, supporting structured bug lifecycle management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div data-aos="fade-up" class="mb-12 relative">
+                    <div style="position:absolute; left:-31px; top:4px; width:14px; height:14px; border-radius:50%; border:2px solid var(--indigo); background:var(--bg-surface); z-index:10;"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
+                        <div>
+                            <h3 class="text-lg font-bold" style="color:var(--text-1);">Software Analyst</h3>
+                            <p style="color:var(--indigo); font-size:0.8rem; font-weight:600;">Ibex. Pakistan</p>
+                        </div>
+                        <span class="exp-date">Oct 2024 — Jun 2025</span>
+                    </div>
+                    <div class="exp-card">
+                        <ul class="exp-list">
+                            <li>Translated business requirements into clear and testable acceptance criteria for development and QA teams</li>
+<li>Performed functional and regression testing across multiple modules to ensure system reliability and stability</li>
+<li>Identified edge cases and potential defects through structured test execution before production release</li>
+<li>Analyzed system behavior to trace root causes of defects and prepared structured reports for development handover</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 3 -->
+                <div data-aos="fade-up" class="mb-12 relative">
+                    <div style="position:absolute; left:-31px; top:4px; width:14px; height:14px; border-radius:50%; border:2px solid #38bdf8; background:var(--bg-base); z-index:10;"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
+                        <div>
+                            <h3 class="text-lg font-bold" style="color:var(--text-1);">Online Instructor (IT &amp; Programming)</h3>
+                            <p style="color:#38bdf8; font-size:0.8rem; font-weight:600;">Self-Employed (Remote)</p>
+                        </div>
+                        <span class="exp-date">2022 — Present</span>
+                    </div>
+                    <div class="exp-card">
+                        <ul class="exp-list">
+                            <li>Deliver live programming instruction to O & A-Level students, focusing on OOP and core computer science concepts</li>
+  <li>Design practical coding exercises in Python and Java to strengthen logical thinking and problem-solving skills</li>
+  <li>Mentor students through structured learning paths</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 4 -->
+                <div data-aos="fade-up" class="relative">
+                    <div style="position:absolute; left:-31px; top:4px; width:14px; height:14px; border-radius:50%; border:2px solid #34d399; background:var(--bg-surface); z-index:10;"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-3">
+                        <div>
+                            <h3 class="text-lg font-bold" style="color:var(--text-1);">Information System Audit Intern</h3>
+                            <p style="color:#34d399; font-size:0.8rem; font-weight:600;">Summit Bank Limited</p>
+                        </div>
+                        <span class="exp-date">Jun 2023 — Aug 2023</span>
+                    </div>
+                    <div class="exp-card">
+                        <ul class="exp-list">
+                             <li>Assisted in information system audits for core banking applications aligned with regulatory and compliance standards</li>
+  <li>Reviewed database structures including transactional integrity, authorization controls, and security boundaries</li>
+  <li>Supported audit teams in identifying system risks across SQL/MySQL environments</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ ACHIEVEMENTS ══════════════════ -->
+    <section id="achievements" class="py-24 px-6 md:px-12 section-divider">
+        <div class="max-w-6xl mx-auto">
+            <h2 data-aos="fade-right" class="text-3xl font-bold mb-4 flex items-center gap-3">
+                <span class="section-num"></span>Achievements &amp; Certifications
+            </h2>
+            <p class="text-sm mb-14 max-w-xl" style="color:var(--text-3);">&nbsp;&nbsp;&nbsp;Certifications, awards, and career milestones</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div data-aos="fade-up" class="ach-card">
+                    <div class="ach-img"><img src="Images/Certificate_page-0001.jpg"QA Fundamentals"></div>
+                    <div class="p-5">
+                        <p class="ach-label" style="color:var(--cyan);">10Pearls University</p>
+                        <h3 class="text-base font-bold mt-1" style="color:var(--text-1);">QA Fundamentals</h3>
+                        <p class="text-xs mt-2 leading-relaxed" style="color:var(--text-2);">Foundational training in software quality assurance, validation design, and bug tracking principles.</p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="75" class="ach-card">
+                    <div class="ach-img"><img src="Images/IBM Cybersecurity Certification _page-0001.jpg" alt="IBM Cybersecurity"></div>
+                    <div class="p-5">
+                        <p class="ach-label" style="color:var(--indigo);">IBM</p>
+                        <h3 class="text-base font-bold mt-1" style="color:var(--text-1);">Cybersecurity Fundamentals</h3>
+                        <p class="text-xs mt-2 leading-relaxed" style="color:var(--text-2);">Comprehensive coverage of digital threat footprints, cryptography vectors, and cloud access monitoring.</p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="150" class="ach-card">
+                    <div class="ach-img"><img src="Images/Sagar_Database_Desgin_Competition_page-0001.jpg" alt="Database Competition"></div>
+                    <div class="p-5">
+                        <p class="ach-label" style="color:#fbbf24;">Spectrum '23</p>
+                        <h3 class="text-base font-bold mt-1" style="color:var(--text-1);">Database Design — 3rd Place</h3>
+                        <p class="text-xs mt-2 leading-relaxed" style="color:var(--text-2);">Awarded 2nd Runner Up for architecting normalized relational schemas under fast-paced competition constraints.</p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="225" class="ach-card">
+                    <div class="ach-img"><img src="Images/Sagar_Dean_List_Award_page-0001.jpg" alt="Dean's List"></div>
+                    <div class="p-5">
+                        <p class="ach-label" style="color:#34d399;">DHA Suffa University</p>
+                        <h3 class="text-base font-bold mt-1" style="color:var(--text-1);">Dean's List — Spring 2024</h3>
+                        <p class="text-xs mt-2 leading-relaxed" style="color:var(--text-2);">Academic Excellence Award — 3.79 term CGPA for outstanding academic dedication.</p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300" class="ach-card">
+                    <div class="ach-img"><img src="Images/Sagar_MyHopeSchool_teaching_experience_page-0001.jpg" alt="Lecturer"></div>
+                    <div class="p-5">
+                        <p class="ach-label" style="color:#38bdf8;">Academic Instruction</p>
+                        <h3 class="text-base font-bold mt-1" style="color:var(--text-1);">Lecturer — My Hope School</h3>
+                        <p class="text-xs mt-2 leading-relaxed" style="color:var(--text-2);">Recognised for delivering structured digital education tracks, breaking down data models and programming for students.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ STUDENT RESULTS ══════════════════ -->
+    <section id="results" class="py-24 px-6 md:px-12 section-divider">
+        <div class="max-w-6xl mx-auto">
+            <h2 data-aos="fade-right" class="text-3xl font-bold mb-4 flex items-center gap-3">
+                <span class="section-num"> </span>Student Performance Records
+            </h2>
+            <p class="text-sm mb-14 max-w-xl" style="color:var(--text-3);">&nbsp;&nbsp;&nbsp;Student performance records highlighting academic progress across classes.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div data-aos="fade-up" class="result-card">
+                    <div class="result-img"><img src="Images/Student1.jpg" alt="Result 1"></div>
+                    <div class="p-3 text-center"><p style="font-family:'DM Mono',monospace; font-size:0.67rem; color:var(--cyan);">Result Record — 01</p></div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="75" class="result-card">
+                    <div class="result-img"><img src="Images/Student2.jpg" alt="Result 2"></div>
+                    <div class="p-3 text-center"><p style="font-family:'DM Mono',monospace; font-size:0.67rem; color:var(--indigo);">Result Record — 02</p></div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="150" class="result-card">
+                    <div class="result-img"><img src="Images/student3.jpg" alt="Result 3"></div>
+                    <div class="p-3 text-center"><p style="font-family:'DM Mono',monospace; font-size:0.67rem; color:#38bdf8;">Result Record — 03</p></div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="225" class="result-card">
+                    <div class="result-img"><img src="Images/Student4.jpg" alt="Result 4"></div>
+                    <div class="p-3 text-center"><p style="font-family:'DM Mono',monospace; font-size:0.67rem; color:#34d399;">Result Record — 04</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════ CONTACT ══════════════════ -->
+    <section id="contact" class="py-24 px-6 md:px-12 section-divider">
+        <div class="max-w-6xl mx-auto">
+            <p data-aos="fade-down" style="font-family:'DM Mono',monospace; font-size:0.68rem; text-align:center; color:var(--cyan); letter-spacing:0.12em; text-transform:uppercase; margin-bottom:0.5rem;">06. Get In Touch</p>
+            <h2 data-aos="zoom-in" class="text-4xl font-extrabold text-center mb-16" style="color:var(--text-1);">Let's Work Together</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+                <!-- Left channels -->
+                <div data-aos="fade-right" class="space-y-4">
+                    <h3 class="text-xl font-bold mb-2" style="color:var(--text-1);">Contact Channels</h3>
+                    <p class="text-sm leading-relaxed max-w-md" style="color:var(--text-2);">Have a QA challenge, an AI system that needs validation, or looking for a technical instructor? Let's connect.</p>
+                    <a href="mailto:SagarKumar54034@gmail.com" class="contact-channel">
+                        <div class="ch-icon"><i class="fas fa-envelope"></i></div>
+                        <div><p class="ch-label">Email</p><p class="ch-value">SagarKumar54034@gmail.com</p></div>
+                    </a>
+                    <a href="tel:+923342591620" class="contact-channel">
+                        <div class="ch-icon"><i class="fas fa-phone"></i></div>
+                        <div><p class="ch-label">Phone</p><p class="ch-value">(+92) 334 2591620</p></div>
+                    </a>
+                    <div class="contact-channel" style="cursor:default;">
+                        <div class="ch-icon"><i class="fas fa-location-dot"></i></div>
+                        <div><p class="ch-label">Location</p><p class="ch-value">Karachi, Pakistan</p></div>
+                    </div>
+                </div>
+
+                <!-- Right form -->
+                <div data-aos="fade-left" style="background:var(--bg-card); border:1px solid var(--border); border-radius:14px; padding:2rem;">
+                    <form id="contact-form" action="https://formspree.io/f/xnjreoog" method="POST">
+                        <div id="form-success" style="display:none; background:rgba(52,211,153,0.1); border:1px solid rgba(52,211,153,0.3); border-radius:8px; padding:1rem; margin-bottom:1rem; font-size:0.85rem; color:#34d399; text-align:center;">
+                            ✓ Message sent! I'll get back to you soon.
+                        </div>
+                        <div style="margin-bottom:1.25rem;">
+                            <label class="form-label">Your Name</label>
+                            <input type="text" name="name" required placeholder="e.g. Ali Hassan" class="form-input">
+                        </div>
+                        <div style="margin-bottom:1.25rem;">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" name="email" required placeholder="you@example.com" class="form-input">
+                        </div>
+                        <div style="margin-bottom:1.5rem;">
+                            <label class="form-label">Message</label>
+                            <textarea name="message" rows="4" required placeholder="Tell me about your project or inquiry..." class="form-input" style="resize:none;"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message →</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer class="py-9 px-6 md:px-12">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4" style="font-family:'DM Mono',monospace; font-size:0.7rem; color:var(--text-3);">
+            <p>Designed &amp; Engineered by Sagar Kumar © 2026</p>
+            <div style="display:flex; gap:1.25rem; font-size:1.05rem;">
+                <a href="https://github.com/Sagarkumar3" target="_blank" style="color:var(--text-3); transition:color .2s;" onmouseover="this.style.color='#22d3ee'" onmouseout="this.style.color='var(--text-3)'"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/sagar-kumar03" target="_blank" style="color:var(--text-3); transition:color .2s;" onmouseover="this.style.color='#818cf8'" onmouseout="this.style.color='var(--text-3)'"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:SagarKumar54034@gmail.com" style="color:var(--text-3); transition:color .2s;" onmouseover="this.style.color='#22d3ee'" onmouseout="this.style.color='var(--text-3)'"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+ 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function closeMobileMenu() { document.getElementById('mobile-menu').classList.remove('open'); }
+    </script>
+</body>
+</html>
